@@ -1,9 +1,5 @@
 const router = require('express').Router()
-const {
-    createCategoryValidator,
-    createProductValidator,
-    updateProductValidator
-} = require('../middlewares/validators')
+const { createCategoryValidator, createProductValidator } = require('../middlewares/validators')
 const { getAllCategories, createNewCategory } = require('../controllers/Category')
 const {
     getAllProducts,
